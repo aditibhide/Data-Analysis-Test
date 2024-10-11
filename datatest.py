@@ -94,7 +94,7 @@ def visualize_individual_boxplots(availability_dict):
     for column in combined_df.columns:
         plt.figure(figsize=(6, 5))
         sns.boxplot(data=combined_df, y=column, width=0.5, color='lightblue')  # Use consistent color palette
-        plt.title(f'Battery {column}')
+        plt.title(f'{column}')
         plt.ylabel('Charge Power Availability (%)')
         plt.tight_layout()
         plt.show()
@@ -102,13 +102,7 @@ def visualize_individual_boxplots(availability_dict):
 
 # Main program
 if __name__ == "__main__":
-    battery_files = [
-        "C:/Users/vishw/PycharmProjects/pythonProject/001.csv",
-        "C:/Users/vishw/PycharmProjects/pythonProject/002.csv",
-        "C:/Users/vishw/PycharmProjects/pythonProject/003.csv",
-        "C:/Users/vishw/PycharmProjects/pythonProject/004.csv",
-        "C:/Users/vishw/PycharmProjects/pythonProject/005.csv"
-    ]
+    battery_files = ["/001.csv","/002.csv","/003.csv","/004.csv","/005.csv"]
 
     availability_dict = {}
     df_list = []
