@@ -103,6 +103,8 @@ To install these dependencies, run:
 ```bash
 pip install pandas matplotlib seaborn
 ```
-
+- If Using Google Collab- Change Line 36 of the Code to: monthly_availability = df['is_available'].resample('ME').mean() * 100
+- If Using PyCharm- Change Line 36 of the Code to: monthly_availability = df['is_available'].resample('M').mean() * 100
+  
 ## Conclusion
 This analysis provides an in-depth understanding of battery charging behavior over time. The program calculates key metrics like charge power availability, evaluates how often batteries reach their rated capacity, and visualizes trends and distributions. This data can be used to optimize charging strategies, improve battery efficiency, and reduce maintenance costs. The provided visualizations make complex data easy to interpret, enabling informed, data-driven decision-making for both technical teams and business stakeholders.
