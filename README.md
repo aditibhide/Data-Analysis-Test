@@ -100,6 +100,3 @@ These plots help in understanding the behavior of battery charge power availabil
 ## Notes
 - The data must be in a valid CSV format and contain appropriate signal names for successful analysis.
 - Missing data is handled using forward and backward filling, but if the data has significant gaps, it might affect the accuracy of the visualizations.
-
-## License
-This project is open-source, and you are free to use and modify it as per the terms of the MIT License.
